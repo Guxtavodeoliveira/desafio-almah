@@ -8,7 +8,7 @@ function buscarPorCep() {
 
     document.getElementById("resultado").innerText = "";
 
-    fetch(`http://localhost:5182/api/enderecos/cep/${cep}`)
+    fetch('https://desafio-almah-production.up.railway.app/api/enderecos/cep/01001000')
         .then(response => {
             if (!response.ok) throw new Error("Erro na requisição");
             return response.json();
@@ -38,7 +38,7 @@ function buscarPorEstadoCidadeRua() {
     }
     document.getElementById("resultado").innerText = "";
 
-    fetch(`http://localhost:5182/api/enderecos/${estado}/${cidade}/${logradouro}`)
+    fetch('https://desafio-almah-production.up.railway.app/api/enderecos/cep/01001000')
         .then(response => {
             if (!response.ok) throw new Error("Erro ao buscar o endereço. Verifique os dados informados.");
             return response.json();
