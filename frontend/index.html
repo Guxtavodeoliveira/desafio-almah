@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consulta de Endereços</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Consulta de Endereços</h1>
+
+<div class="container">
+  <section>
+    <h2>Buscar por CEP</h2>
+    <input type="text" id="cep" placeholder="Digite o CEP">
+    <button onclick="buscarPorCep()">Buscar</button>
+  </section>
+
+  <section>
+    <h2>Buscar por Estado e Cidade</h2>
+    <input type="text" id="estado" placeholder="Digite o Estado (ex: SP)">
+    <input type="text" id="cidade" placeholder="Digite a Cidade">
+    <input type="text" id="logradouro" placeholder="Digite o Logradouro">
+    <button onclick="buscarPorEstadoCidadeRua()">Buscar</button>
+  </section>
+
+  <div id="resultado"></div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
