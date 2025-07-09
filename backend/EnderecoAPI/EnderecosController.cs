@@ -14,7 +14,6 @@ public class EnderecosController : ControllerBase
         _http = httpClientFactory.CreateClient();
     }
 
-    // GET: /api/enderecos/cep/01001000
     [HttpGet("cep/{cep}")]
     public async Task<IActionResult> BuscarPorCep(string cep)
     {

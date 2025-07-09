@@ -47,13 +47,11 @@ function buscarPorEstadoCidadeRua() {
             if (Array.isArray(dados) && dados.length === 0) {
                 document.getElementById("resultado").innerText = " Erro ao buscar o endereço. Verifique os dados informados.";
             } else {
-                // Pega só o primeiro item do array
+
                 const primeiro = dados[0];
                 document.getElementById("resultado").innerHTML = `<p><strong>CEP:</strong> ${primeiro.cep}</p>`;
             }
         })
-
-
 
         .catch(error => {
             console.error(error);
